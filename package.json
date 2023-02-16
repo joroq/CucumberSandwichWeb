@@ -1,0 +1,7 @@
+{
+  "devDependencies": {
+    "@cucumber/cucumber": "^8.11.1",
+    "chromedriver": "^110.0.0",
+    "selenium-webdriver": "^4.8.0"
+  }
+}
