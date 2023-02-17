@@ -16,6 +16,8 @@ const teams = [
 
 
 // Functions
+
+// Populates empty div with data from the array and a button
 const populate = () => {
     let resultsDiv = document.getElementById('content');
     resultsDiv.innerHTML = '';
@@ -30,6 +32,8 @@ const populate = () => {
         '<button id="populate-button" onclick="celebrate()">Click to change this site in recognition of the first league winners!</button>';
 }
 
+
+// Changes style elements of the page
 const celebrate = () => {
     document.body.style.backgroundColor = 'darkblue';
     let items = document.getElementsByClassName('change');
