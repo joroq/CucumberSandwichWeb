@@ -12,7 +12,7 @@ Then the heading of the page should be "The Founder Members of the Football Leag
 
 Scenario: Content div is not populated on page load
 Given a fresh load of the page
-Then the content div should contain ""
+Then the content div should be ""
 
 Scenario: Content div is populated on button click
 Given a fresh load of the page
