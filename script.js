@@ -29,7 +29,7 @@ const populate = () => {
         }
     }
     document.getElementById('button-div').innerHTML =
-        '<button id="populate-button" onclick="celebrate()">Click to change this site in recognition of the first league winners!</button>';
+        '<button id="change-button" onclick="celebrate()">Click to change this site in recognition of the first league winners!</button>';
 }
 
 
