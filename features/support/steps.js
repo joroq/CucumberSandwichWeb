@@ -57,10 +57,6 @@ Then('the content div is populated', async function () {
   });
 
   Then('the background colour of the content div is {string}', async function (string) {
-    const element = await this.getElement('content');
-    const color = await this.elementBackground(element);
-    console.log(color);
-    // todo: returned value of color will be in different format to the supplied string,
-    // which is a css color. Some form of conversion will need to be done before
-    // assertion is written.
+    const color = await this.elementBackground('content');
+    assert(color == 'rgba(0, 0, 139, 1)'); //darkblue in rgba format
   });

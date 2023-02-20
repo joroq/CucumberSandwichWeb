@@ -41,5 +41,6 @@ const celebrate = () => {
         items[i].style.color = "white";
     }
     document.getElementById('content').style.border = '20px solid white';
+    document.getElementById('content').style.backgroundColor = 'darkblue';
     document.getElementById('winners').style.fontSize = '2em';
 }

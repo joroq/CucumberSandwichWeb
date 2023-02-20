@@ -52,9 +52,8 @@ class CustomWorld {
     /**
      * Returns css value of specified element
      */
-    async elementBackground(css) {
-        const selector = webdriver.By.css(css);
-        const element = await this.driver.findElement(selector)
+    async elementBackground(id) {
+        const element = await this.getElement(id);
         return await element.getCssValue('background-color');
     }
     
