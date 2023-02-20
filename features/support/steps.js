@@ -35,13 +35,13 @@ When("the {word} button is clicked", async function (action) {
 
 Then("the browser title should be {string}", async function(string) {
     const title = await this.driver.getTitle();
-    assert(title == "Testing a Cucumber Sandwich");
+    assert(title == string);
 })
 
 Then("the heading of the page should be {string}", async function(string) {
     const element = await this.getElementByCss('h1');
     const title = await element.getText();
-    assert(title == "The Founder Members of the Football League");
+    assert(title == string);
 })
 
 Then('the content div should be {string}', async function(string) {
