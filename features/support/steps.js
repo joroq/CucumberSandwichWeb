@@ -47,7 +47,7 @@ Then("the heading of the page should be {string}", async function(string) {
 Then('the content div should be {string}', async function(string) {
     const element = await this.getElement('content');
     const text = await element.getText();
-    assert(text == "");
+    assert(text == string);
 });
 
 Then('the content div is populated', async function () {
