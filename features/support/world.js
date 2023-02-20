@@ -50,7 +50,7 @@ class CustomWorld {
     }
 
     /**
-     * Returns css value of specified element
+     * Returns css value of specified element in rgba format
      */
     async elementBackground(id) {
         const element = await this.getElement(id);
